@@ -4,13 +4,6 @@
     padding: 0;
   }
 
-.icon {
-    display: flex;
-    float: right;
-    padding-left: 500%;
-    margin-bottom: 30px;
-}
-
 
 div {
     background: #659494;
@@ -37,7 +30,7 @@ div {
 
   }
 
-  nav a{
+  nav ul li a{
       
       color: #ffffff;
       background: #659494;
@@ -51,7 +44,7 @@ div {
 
   /*On mouse hover, underline appears underneath*/
 
-  nav a:hover{
+  nav ul li a:hover{
       text-decoration: underline;
       color:#000000;
       background:whitesmoke
