@@ -1,0 +1,19 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap');
+
+body {
+    background-color:rgb(37, 37, 37);
+    font-family: 'Do Hyeon', sans-serif;
+    font-size: 20px;
+    color: white;
+
+}
+
+h1 {
+    /*background-color:rgb(37, 37, 37);*/
+    text-align: center;
+}
+
+form {
+    text-align: center;
+}
