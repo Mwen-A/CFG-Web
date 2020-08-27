@@ -8,27 +8,41 @@
   <link href="styles.css" rel= "stylesheet" type = "text/css" >
 </head>
 
+<!-- 1. Add banner image from pexels of someone doing maths-->
+<!-- 2. Display calculation below header (perhaps just output the full sentence?)-->
+
+
 <body>
-<h1> FUN CALC </h1>
+<h1> FUN CALCS </h1>
+<div class="container">
+
+        <div id="calculation-display">
+        
+        <h2></h2>
+        
+       
+        </div>
+        
+</div>
 
 <div class="container">
 
 <div class="container-item">
-<img src="http://placehold.it/144x150">
+<img src="plus.png" alt="addition" width="144" height="150">
 <h2>Addition</h2>
 <p>Add two numbers</p>
-<button onclick="addition()" id="plus">Start</button>
+<button onclick="addition()"; id="plus">Start</button>
 </div>
 
 <div class="container-item">
-    <img src="http://placehold.it/144x150">
+    <img src="minus.png" alt="subtraction" width="144" height="150"">
     <h2>Subtraction</h2>
     <p>Subtract two numbers</p>
     <button onclick="subtract()" id="minus">Start</button>
     </div>
 
 <div class="container-item">
-        <img src="http://placehold.it/144x150">
+        <img src="multiplication.png" alt="multiplication" width="144" height="150">
         <h2>Multiplication</h2>
         <p>Multiply two numbers</p>
         <button onclick="multi()" id="multi">Start</button>
@@ -39,21 +53,21 @@
 <div class="container">
     
     <div class="container-item">
-    <img src="http://placehold.it/144x150">
+    <img src="division.png" alt="division" width="144" height="150">
     <h2>Division</h2>
     <p>Divide two numbers</p>
     <button onclick="divide()" id="divide">Start</button>
     </div>
     
     <div class="container-item">
-        <img src="http://placehold.it/144x150">
+        <img src="expo.png" alt="exponent" width="144" height="150">
         <h2>Exponent</h2>
         <p>Exponent of one number</p>
         <button onclick="exponent()" id="expo">Start</button>
         </div>
     
     <div class="container-item">
-            <img src="http://placehold.it/144x150">
+            <img src="squareroot.png" alt="square-root" width="144" height="150">
             <h2>Square-root</h2>
             <p>Square-root of a number</p>
             <button onclick="square()" id="square">Start</button>

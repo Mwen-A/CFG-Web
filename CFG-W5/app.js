@@ -2,21 +2,13 @@
 
 
 
-// document.write = ("Hello");
-
-// let calc = prompt("Would you like to make a calculation?");
-// if (calc == "yes"){
-//     alert("Lets calculate!")
-// }else{
-//     alert("Bye");
-// }
-
 
 function addition(a,b){
 var a = prompt("Input the first number: ");
 var b = prompt("Input the the second number: ");
 var c= +a + +b;  //for some reason processes it as a string instead of integers
     alert(c);
+    myFunction();
 }
 
 function subtract(a,b){
@@ -54,15 +46,7 @@ var c = Math.sqrt(a);
 }
 
 
-// // function alternatives(){
-// //     var calc = prompt("Would you like to make a calculation?");
 
-// //     if (calc == "yes"){
-// //         return calculation();
-// //     }else{
-// //         alert("Bye");
-// //     }
-// // }
 
 
 
