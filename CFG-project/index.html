@@ -1,0 +1,409 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- js link --> 
+  <script src="app.js"></script>
+  <!-- css link --> 
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+
+  <script src="https://api.mqcdn.com/sdk/mapquest-js/v1.3.2/mapquest.js"></script>
+  <link type="text/css" rel="stylesheet" href="https://api.mqcdn.com/sdk/mapquest-js/v1.3.2/mapquest.css"/>
+  <script>
+//mapquest API
+var L;
+    window.onload = function() {
+      L.mapquest.key = '7fLpSCYAZcTJAqSXGjifoQ5i4LJnZi7x';
+
+      // 'map' refers to a <div> element with the ID map
+      var map = L.mapquest.map('map', {
+        center: [14.682113, -17.451037],
+        // 1. change 'map' to 'hybrid', try other type of map
+        layers: L.mapquest.tileLayer('map'),
+        zoom: 18
+      });
+
+      // 3. Add icon
+      L.marker([14.682113, -17.451037], {
+        icon: L.mapquest.icons.marker({
+          primaryColor: '#22407F',
+          secondaryColor: '#3B5998',
+          shadow: true,
+          size: 'md',
+          symbol: ''
+        })
+      })
+      .bindPopup('Come and grab a coffee!')
+      .addTo(map);
+    }
+  </script>
+
+  <title>Café Touba</title>
+</head>
+<body>
+
+  <!-- navbar -->
+<header>
+<nav class="nav-wrapper transparent ">
+ <div class="container">
+   <a href="" class="brand-logo">Café Touba</a>
+   <a href="" class="sidenav-trigger" data-target="mobile-menu">
+   <i class="material-icons">menu</i>
+  </a>
+   <ul class="right hide-on-med-and-down">
+     <li><a href="order.html"><span class="bold black-text name">Order</span></a></li>
+     <li><a href="#food-menu"><span class="bold black-text name">Menu</span></a></li>
+     <li><a href="#contact"><span class="bold white-text name">Contact & Opening times</span></a></li>
+   </ul>
+
+   <ul class="sidenav white black-text" id="mobile-menu">
+    <li><div class="user-view">
+      <div class="background">
+        <img src="img/street.jpg">
+      </div>
+      <a href="#"><span class="bold white-text name">Café Touba</span></a>
+    </div></li>
+    <li><a href="order.html">Order</a></li>
+    <li><a href="#food-menu">Menu</a></li>
+    <li><a href="#contact">Contact & Opening times</a></li>
+   </ul>
+ </div>
+</nav>
+</header>
+
+  <!-- photo / grid -->
+<section class="container section">
+
+  <div class="row">
+ 
+<div class="col s12 m4">
+      <div class="card-panel">
+        <div class="card-image">
+          <img src="img/pexels-uncoveredlens-.jpg" alt="" class="responsive-img materialboxed">
+        </div>
+        <h3 class="grey-text text-darken-4">Freshly made with love</h3>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti eligendi quidem facere aspernatur cupiditate, ut voluptate blanditiis voluptatum laboriosam, perferendis voluptatem ab sint, quasi quia culpa iure libero eum nisi!</p>
+      </div>
+    </div>
+<div class="col s12 m4">
+      <div class="card-panel">
+        <div class="card-image">
+          <img src="img/pexels-rfstudio-4177755.jpg" alt="" class="responsive-img materialboxed">
+        </div>
+        <h3 class="grey-text text-darken-4">Locally sourced ingredients</h3>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti eligendi quidem facere aspernatur cupiditate, ut voluptate blanditiis voluptatum laboriosam, perferendis voluptatem ab sint, quasi quia culpa iure libero eum nisi!</p>
+  </div>
+    </div>
+
+ <div class="col s12 m4">
+      <div class="card-panel">
+        <div class="card-image">
+          <img src="img/pexels-muhammadtaha-ibrahim-ma'aji-4947868.jpg" alt="" class="responsive-img materialboxed">
+        </div>
+        <h3 class="grey-text text-darken-4">Discover new flavours</h3>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti eligendi quidem facere aspernatur cupiditate, ut voluptate blanditiis voluptatum laboriosam, perferendis voluptatem ab sint, quasi quia culpa iure libero eum nisi!</p>
+      </div>
+    </div>
+
+  </div>
+
+
+</section>
+
+<!-- slider -->
+<div class="slider">
+  <ul class="slides">
+    <li>
+      <img src="img/pexels-gustavo-fring-4173181.jpg">  
+     <div class="caption right-align">
+        <h3 class="light orange-text">"Absolutely delicious!"</h3>
+        <h5 class="light orange-text">"I highly recommend all items" - person xyz</h5>
+      </div>
+    </li>
+    <li>
+      <img src="img/pexels-nappy-935988.jpg">
+ <div class="caption left-align">
+        <h3>"Great service!"</h3>
+        <h5 class="light grey-text text-lighten-3">"Staff is super friendly" - person abc</h5>
+      </div>
+    </li>
+
+    <li>
+      <img src="img/pexels-nappy-936019.jpg">
+ <div class="caption right-align">
+        <h3 class="light orange-text">Relaxing ambiance!</h3>
+        <h5 class="light orange-text">"Great Vibes" - person 123</h5>
+      </div>
+    </li>
+  </ul>
+</div>
+
+<div>
+  <p>
+
+  </p>
+</div> 
+
+  <!-- services / tabs -->
+<section class="container-class scrollspy" id="food-menu">
+<h3 class="center"> Our Menu</h3>
+<h4 class="center">Beverages</h4>
+<div class="row">
+  <div class="col s12 m4 l3">
+    <div class="card">
+      <div class="card-image waves-effect waves-block waves-light">
+        <img class="activator" src="img/pexels-nappy-1019410.jpg">
+      </div>
+      <div class="card-content">
+        <span class="card-title activator grey-text text-darken-4">Attaya <span class="right">£5</span></span>
+      </div>
+      <div class="transparent card-reveal">
+        <span class="card-title orange-text text-darken-4 bold">Attaya</span>
+        <p>Green tea with a line of foam</p>
+      </div>
+    </div>
+</div>
+<div class="col s12 m4 l3">
+  <div class="card">
+    <div class="card-image waves-effect waves-block waves-light">
+      <img class="activator" src="img/pexels-nappy-1019410.jpg">
+    </div>
+    <div class="card-content">
+      <span class="card-title activator grey-text text-darken-4">Café Touba <span class="right">£5</span></span>
+    </div>
+    <div class="transparent card-reveal">
+      <span class="card-title orange-text text-darken-4 bold">Café Touba</span>
+      <p>Traditional spicy coffee</p>
+    </div>
+  </div>
+</div>
+  <div class="col s12 m4 l3">
+    <div class="card">
+      <div class="card-image waves-effect waves-block waves-light">
+        <img class="activator" src="img/pexels-nappy-1019410.jpg">
+      </div>
+      <div class="card-content">
+        <span class="card-title activator grey-text text-darken-4">Mint Zobo ice tea <span class="right">£5</span></span>
+      </div>
+      <div class="transparent card-reveal">
+        <span class="card-title orange-text text-darken-4 bold">Mint Zobo ice tea</span>
+        <p>Refreshing mint red hibiscus flower tea</p>
+      </div>
+    </div>
+</div>
+<div class="col s12 m4 l3">
+      <div class="card">
+        <div class="card-image waves-effect waves-block waves-light">
+          <img class="activator" src="img/pexels-nappy-1019410.jpg">
+        </div>
+        <div class="card-content">
+          <span class="card-title activator grey-text text-darken-4">Baobab ice tea<span class="right">£5</span></span>
+        </div>
+        <div class="transparent card-reveal">
+          <span class="card-title orange-text text-darken-4 bold">Baobab ice tea</span>
+          <p>Cooling and creamy baobab ice tea</p>
+        </div>
+      </div>
+  </div>
+</div>
+<h4 class="center">Small Chops</h4>
+<div class="row">
+  <div class="col s12 m4 l3">
+    <div class="card">
+      <div class="card-image waves-effect waves-block waves-light">
+        <img class="activator" src="img/pexels-nappy-1019410.jpg">
+      </div>
+      <div class="card-content">
+        <span class="card-title activator grey-text text-darken-4">Puff puff <span class="right">£5</span></span>
+      </div>
+      <div class="transparent card-reveal">
+        <span class="card-title orange-text text-darken-4 bold">Puff puff</span>
+        <p>Puff puff with a select variety of fillings</p>
+      </div>
+    </div>
+</div>
+<div class="col s12 m4 l3">
+  <div class="card">
+    <div class="card-image waves-effect waves-block waves-light">
+      <img class="activator" src="img/pexels-nappy-1019410.jpg">
+    </div>
+    <div class="card-content">
+      <span class="card-title activator grey-text text-darken-4">Waina (masa) <span class="right">£5</span></span>
+    </div>
+    <div class="transparent card-reveal">
+      <span class="card-title orange-text text-darken-4 bold">Waina (masa)</span>
+      <p>Sweet and fluffy rice pancakes</p>
+    </div>
+  </div>
+</div>
+  <div class="col s12 m4 l3">
+    <div class="card">
+      <div class="card-image waves-effect waves-block waves-light">
+        <img class="activator" src="img/pexels-nappy-1019410.jpg">
+      </div>
+      <div class="card-content">
+        <span class="card-title activator grey-text text-darken-4">Akara<span class="right">£5</span></span>
+      </div>
+      <div class="transparent card-reveal">
+        <span class="card-title orange-text text-darken-4 bold">Akara</span>
+        <p>Spicy bean fritters with a thinly veiled crust</p>
+      </div>
+    </div>
+</div>
+<div class="col s12 m4 l3">
+      <div class="card">
+        <div class="card-image waves-effect waves-block waves-light">
+          <img class="activator" src="img/pexels-nappy-1019410.jpg">
+        </div>
+        <div class="card-content">
+          <span class="card-title activator grey-text text-darken-4">Moin moin<span class="right">£5</span></span>
+        </div>
+        <div class="transparent card-reveal">
+          <span class="card-title orange-text text-darken-4 bold">Moin moin</span>
+          <p>Steamed soft bean buns</p>
+        </div>
+      </div>
+  </div>
+</div>
+</section>
+
+  <!-- parallax -->
+
+  <div class="parallax-container">
+    <div class="parallax">
+      <img src="img/pexels-tope-a-asokere-2.jpg" alt="" class="responsive-img">
+    </div>
+  </div>
+
+  <!-- contact details section -->
+<section class="section container scrollspy" id="contact">
+<div class="row">
+<div class="col s12 l4">
+  <h5 class="grey-text text-darken-4">Contact us</h5>
+
+<table>
+  <tbody>
+    <tr>
+<td> Address </td>
+<td> 1111 Ave. Blaise Diagne, Dakar </td>
+    </tr>
+    <tr>
+    <td>Phone</td>
+    <td>+221 - 12345 - ABC</td>
+    </tr>
+
+  </tbody>
+</table>
+
+</div>
+
+  <div class="col s12 l4">
+  <h5>Opening times</h5>
+    <table>
+    <tbody>
+      <tr>
+        <td>Monday to Thursday</td>
+        <td>7 AM TO 6 PM</td>
+      </tr>
+      <tr>
+        <td>Friday</td>
+        <td>CLOSED</td>
+      </tr>
+      <tr>
+        <td>Saturday to Sunday</td>
+        <td>9 AM TO 8 PM</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+     
+<div class="col s12 l4">
+  <h5 class="grey-text text-darken-4">Find us</h5>
+  <div id="map">
+  </div>
+  </div>
+
+</div>
+
+</div>
+
+
+
+</section>
+ 
+  <!-- footer -->
+
+<footer class="page-footer grey darken-3">
+  <div class="container">
+<div class="row">
+  <div class="col s12 l6">
+    <h5>Acknowledgements</h5>
+    <p> The artwork and photos have been sourced from the artists below, support or check them out on Pexels: <br>
+      Photo by <span class="bold">Retha Ferguson (RF._.studio)</span> from Pexels <br>
+      Photo by <span class="bold">Tope-A-Asokere</span> from Pexels <br>
+      Photo by <span class="bold">Breston Kenya</span> from Pexels <br>
+      Photo by <span class="bold">Muhammadtaha Ibrahim Ma'aji</span> from Pexels <br>
+      Photo by <span class="bold">August de Richelieu</span> from Pexels <br>
+      Photo by <span class="bold">Nappy</span> from Pexels <br>
+      Photo by <span class="bold">Gustavo Fring</span> from Pexels <br>
+   </p>
+
+  </div>
+  <div class="col s12 l4 offset-l2">
+    <h5>Social Media</h5>
+    <ul class="list-inline">
+      <li><a href="https://www.instagram.com/?hl=en" class="tooltipped btn-floating btn-small grey darken-4" data-tooltip="instagram">
+        <i class="fab fa-instagram"></i></a></li>
+        
+        <li><a href="https://www.twitter.com/" class="tooltipped btn-floating btn-small grey darken-4" data-tooltip="twitter">
+        <i class="fab fa-twitter"></i></a></li>
+  
+        <li><a href="https://www.facebook.com/" class="tooltipped btn-floating btn-small grey darken-4" data-tooltip="facebook">
+        <i class="fab fa-facebook"></i></a></li>
+    </ul>
+    </div>
+  </div>
+</div>
+
+<div class="footer-copyright grey darken-4">
+  <div class="container center-align">&copy; 2020 Mwen-A</div>
+</div>
+
+</footer>
+
+
+
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+  
+  <!--Jquery initiation of functionalities-->
+  <script>
+    var dateToday = new Date();
+    $(document).ready(function(){
+    $('.sidenav').sidenav();
+    $('.materialboxed').materialbox();
+    $('.parallax').parallax();
+    $('.tabs').tabs();
+    $('.tooltipped').tooltip();
+    $('.scrollspy').scrollSpy();
+    $('.datepicker').datepicker({
+        minDate: dateToday
+
+    });
+    
+    $('.slider').slider({indicators:false})
+    $('.modal').modal();
+    $('.timepicker').timepicker();
+    });
+
+  </script>
+</body>
+</html>

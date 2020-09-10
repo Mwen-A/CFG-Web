@@ -1,0 +1,122 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- css link --> 
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+  
+    <script src="https://api.mqcdn.com/sdk/mapquest-js/v1.3.2/mapquest.js"></script>
+    <link type="text/css" rel="stylesheet" href="https://api.mqcdn.com/sdk/mapquest-js/v1.3.2/mapquest.css"/>
+
+
+    <title>Cafe Touba - quiz</title>
+</head>
+<body>
+    
+    <header>
+        <nav class="nav-wrapper transparent ">
+         <div class="container">
+           <a href="" class="brand-logo">Café Touba</a>
+           <a href="" class="sidenav-trigger" data-target="mobile-menu">
+           <i class="material-icons">menu</i>
+          </a>
+           <ul class="right hide-on-med-and-down">
+             <li><a href="quiz.html">Quiz</a></li>
+             <li><a href="#services">Services</a></li>
+             <li><a href="#contact">Contact</a></li>
+        
+             <li><a href="https://www.instagram.com/?hl=en" class="tooltipped btn-floating btn-small grey darken-4" data-tooltip="instagram">
+              <i class="fab fa-instagram"></i></a></li>
+              
+              <li><a href="https://www.twitter.com/" class="tooltipped btn-floating btn-small grey darken-4" data-tooltip="twitter">
+              <i class="fab fa-twitter"></i></a></li>
+        
+              <li><a href="https://www.facebook.com/" class="tooltipped btn-floating btn-small grey darken-4" data-tooltip="facebook">
+              <i class="fab fa-facebook"></i></a></li>
+        
+           </ul>
+        
+           <ul class="sidenav white black-text" id="mobile-menu">
+            <li><div class="user-view">
+              <div class="background">
+                <img src="img/street.jpg">
+              </div>
+              <a href="#"><span class="white-text name">Café Touba</span></a>
+            </div></li>
+            <li><a href="quiz.html">Quiz</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+           </ul>
+         </div>
+        </nav>
+        </header>
+    
+ <form action="#" id="quiz">
+    <p>1. When were we established?</p>
+    <p><label><input name="group1" type="radio" value="ans1"/><span>1982</span></label></p>
+    <p><label><input name="group1" type="radio" value="ans2"/><span>2002</span></label></p>
+    <p><label><input name="group1" type="radio" value="ans3"/><span>1992</span></label></p>
+    
+    <p>2. What is the name of our signature hot beverage?</p>
+    <p><label><input name="group2" type="radio" value="ans1"/><span>Attaya</span></label></p>
+    <p><label><input name="group2" type="radio" value="ans2"/><span>Café Touba</span></label></p>
+    <p><label><input name="group2" type="radio" value="ans3"/><span>Wonjo</span></label></p>
+  
+    <p>3. How many countries are you able to find us in?</p>
+    <p><label><input name="group3" type="radio" value="ans1"/><span>5</span></label></p>
+    <p><label><input name="group3" type="radio" value="ans2"/><span>3</span></label></p>
+    <p><label><input name="group3" type="radio" value="ans3"/><span>4</span></label></p>
+
+    <p>4. When were we established?</p>
+    <p><label><input name="group4" type="radio" value="ans1"/><span>1982</span></label></p>
+    <p><label><input name="group4" type="radio" value="ans2"/><span>2002</span></label></p>
+    <p><label><input name="group4" type="radio" value="ans3"/><span>1992</span></label></p>
+    
+    <p>5. What is the name of our signature hot beverage?</p>
+    <p><label><input name="group5" type="radio" value="ans1"/><span>Attaya</span></label></p>
+    <p><label><input name="group5" type="radio" value="ans2"/><span>Café Touba</span></label></p>
+    <p><label><input name="group5" type="radio" value="ans3"/><span>Wonjo</span></label></p>
+  
+  </form>
+
+  <div class="input-field">
+    <button class="btn grey" onclick="validateRadio()">Submit</button>
+  </div>
+
+
+  <!-- Modal Trigger -->
+  <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Modal</a>
+
+  <!-- Modal Structure -->
+  <div id="modal1" class="modal">
+    <div class="modal-content">
+      <h4>Select a radio button</h4>
+      <p>One radio button must be selected</p>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-close waves-effect waves-green btn-flat">OK</a>
+    </div>
+  </div>
+
+  <!-- js link --> 
+  <script src="app.js"></script>
+
+  <!-- Compiled and minified JavaScript -->
+ 
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+
+
+</body>
+</html>
+

@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+header {
+    background: url(img/pexels-august-de-richelieu-4262012.jpg);
+    background-size: cover; 
+    background-position: center;
+    min-height: 500px; 
+}
+
+
+
+html, body{
+    font-family: 'Roboto', sans-serif;
+}
+
+/*vw relative to viewport*/
+.section{
+    
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.tabs .indicator{
+
+    background-color: #1a237e;
+}
+
+
+
+.tabs .tab a:focus, .tabs .tab a:focus.active{
+    background:transparent;
+}
+
+#map {
+    width: 300px;
+    height: 150px;
+  }
+
+  
+@media screen and (max-width: 670 px){
+    header{
+        min-height: 500px;
+    }
+}
+
+.bold{
+    font-weight: 900;
+}
+
+.list-inline{
+padding-left: 0;
+margin-left: -5px;
+list-style: none;
+}
+
+.list-inline > li{
+    display: inline-block;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+.bold{
+    font-weight: 900;
+    font-size: large;
+}
