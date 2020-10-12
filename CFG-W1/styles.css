@@ -103,3 +103,23 @@ div{
 .content{
     text-align:center;
 }
+
+table thead tr th a, ol li a{
+    text-decoration: none;
+    color: rgb(238, 231, 226);
+}
+
+.textstyle-1{
+    color: rgb(59, 30, 9);
+    text-align: center;
+}
+
+.container-item-1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.margin-item{
+    margin: 15px; 
+}
